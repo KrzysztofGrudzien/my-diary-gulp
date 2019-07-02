@@ -11,15 +11,15 @@
     font-weight: 600;
     color: $fourth-color;
     background-color: $second-color;
-}
 
-.header__logo {
-    align-self: center;
-    font-size: 36px;
-}
+    &__logo {
+        align-self: center;
+        font-size: 36px;
+    }
 
-.header__heading {
-    align-self: center;
-    font-size: 36px;
-    text-transform: uppercase;
+    &__heading {
+        align-self: center;
+        font-size: 36px;
+        text-transform: uppercase;
+    }
 }
