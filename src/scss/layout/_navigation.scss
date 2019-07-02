@@ -8,10 +8,7 @@
     background-color: rgba(169, 11, 85, 0.85);
 
     &__list {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-content: center;
+        @include flex(flex, center, center, column, nowrap);
         @include dimention-vh(100%, 100vh);
     }
 

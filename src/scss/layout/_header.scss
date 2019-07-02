@@ -4,8 +4,7 @@
 
 .header {
     grid-area: header;
-    display: flex;
-    justify-content: space-between;
+    @include flex(flex, space-between, null, null, null);
     @include padding(20px, 20px, 20px, 20px);
     box-shadow: 0 2px 25px rgba(0, 0, 0, 0.3);
     @include font(null, 600, $fourth-color);

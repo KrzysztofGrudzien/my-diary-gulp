@@ -6,8 +6,7 @@
 
 .author {
     grid-area: sidebar;
-    display: flex;
-    flex-flow: column nowrap;
+    @include flex(flex, null, null, column, nowrap);
     @include margin(100px, null, null, null);
 
     &__picture-box {
@@ -45,9 +44,7 @@
 }
 
 .diary-day {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    @include flex(flex, space-between, null, null, wrap);
     @include margin(100px, 20px, null, null);
     box-shadow: 0 2px 25px rgba(0, 0, 0, 0.3);
     background-color: $fifth-color;
@@ -60,9 +57,7 @@
 }
 
 .diary-tasks {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    @include flex(flex, space-between, null, null, wrap);
     position: relative;
     @include dimention(50%, null);
     @include padding(0, 20px, 20px, 20px);
@@ -139,9 +134,9 @@
     }
 
     &__hr {
-        @include dimention(100%, 2px);
+        @include dimention(100%, 1);
         @include margin(10px, 0, 10px, 0);
-        @include border(solid, 1px, $seventh-color);
+        border-bottom: solid 1px $seventh-color;
     }
 
     &__tags {
