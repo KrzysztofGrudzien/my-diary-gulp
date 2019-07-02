@@ -1,0 +1,25 @@
+/* ================================== */
+/*             MAIN HEADER            */
+/* ================================== */
+
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    color: var(--fourth-color);
+    background-color: var(--second-color);
+}
+
+.header__logo {
+    align-self: center;
+    font-size: 36px;
+}
+
+.header__heading {
+    align-self: center;
+    font-size: 36px;
+    text-transform: uppercase;
+}
