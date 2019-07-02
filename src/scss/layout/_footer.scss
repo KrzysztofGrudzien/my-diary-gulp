@@ -4,7 +4,7 @@
 
 .footer {
     grid-area: footer;
-    padding-top: 180px;
+    @include padding(180px, null, null, null);
     text-align: center;
     @include font(12px, null, $third-color);
     background-image: url("../assets/img/footer.svg");

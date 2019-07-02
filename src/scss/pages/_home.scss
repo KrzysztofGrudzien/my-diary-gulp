@@ -48,14 +48,13 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-right: 20px;
-    margin-top: 100px;
+    @include margin(100px, 20px, null, null);
     box-shadow: 0 2px 25px rgba(0, 0, 0, 0.3);
     background-color: $fifth-color;
 
     &__header {
         @include dimention(100%, null);
-        margin-top: -45px;
+        @include margin(-45px, null, null, null);
         @include font(30px, null, $third-color);
     }
 }
@@ -66,7 +65,7 @@
     flex-wrap: wrap;
     position: relative;
     @include dimention(50%, null);
-    padding: 0 20px 20px 20px;
+    @include padding(0, 20px, 20px, 20px);
 
     &__more {
         @include dimention(10%, null);
@@ -75,7 +74,7 @@
 
     &__more .material-icons {
         float: right;
-        margin-right: -10px;
+        @include margin(null, -10px, null, null);
         @include font(30px, null, $second-color);
     }
 
@@ -91,7 +90,7 @@
 
     &__picture-box {
         @include dimention(100%, 100px);
-        margin: 10px 0;
+        @include margin(10px, 0, 10px, 0);
         overflow: hidden;
         background-color: $fourth-color;
     }
@@ -141,12 +140,12 @@
 
     &__hr {
         @include dimention(100%, 2px);
-        margin: 10px 0;
+        @include margin(10px, 0, 10px, 0);
         @include border(solid, 1px, $seventh-color);
     }
 
     &__tags {
         @include dimention(100%, null);
-        margin: 30px 0 0 0;
+        @include margin(30px, 0, 0, 0);
     }
 }

@@ -12,23 +12,21 @@
         flex-flow: column nowrap;
         justify-content: center;
         align-content: center;
-        width: 100%;
-        min-height: 100vh;
+        @include dimention-vh(100%, 100vh);
     }
 
     &__item {
         display: block;
         box-sizing: border-box;
         @include padding(16px, 16px, 16px, 16px);
+        @include font(60px, 100, null);
         text-align: center;
-        font-weight: 100;
-        font-size: 60px;
     }
 
     &__link::before {
         content: "";
         @include position(absolute, 50%, null, null, 50%, null);
-        width: 0;
+        @include dimention(0, null);
         transform: translate(-50%, -50%);
         background-color: $fourth-color;
     }
