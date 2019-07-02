@@ -134,7 +134,7 @@
     }
 
     &__hr {
-        @include dimention(100%, 1);
+        @include dimention(100%, 1px);
         @include margin(10px, 0, 10px, 0);
         border-bottom: solid 1px $seventh-color;
     }

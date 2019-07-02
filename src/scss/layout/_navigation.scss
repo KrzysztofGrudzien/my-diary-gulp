@@ -15,6 +15,7 @@
     &__item {
         display: block;
         box-sizing: border-box;
+        @include dimention(50%, null);
         @include padding(16px, 16px, 16px, 16px);
         @include font(60px, 100, null);
         text-align: center;
@@ -31,7 +32,7 @@
     &__link:hover::before {
         content: "";
         @include position(absolute, 50%, null, null, 50%, null);
-        @include dimention(50%, 1px);
+        @include dimention(100%, 1px);
         transform: translate(-50%, -50%);
         transition: width .3s ease-in-out;
         background-color: $fourth-color;
