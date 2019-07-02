@@ -1,13 +1,16 @@
 /* Author: Krzysztof Grudzień */
 
+/* -------------- UTILS ------------- */
+@import "utils/variables.scss";
+@import "utils/helpers";
+
 /* -------------- BASE -------------- */
 @import "base/normalize";
 @import "base/base";
 
-/* -------------- UTILS ------------- */
+/* ------------ COMPONENTS ----------- */
+@import "components/buttons";
 
-@import "utils/variables.scss";
-@import "utils/helpers";
 
 /* ================================== */
 /*         MAIN GRID SETTINGS         */
@@ -337,20 +340,6 @@
 .diary-tasks__tags {
   width: 100%;
   margin: 30px 0 0 0;
-}
-
-.tags {
-  float: right;
-}
-
-.tags__item {
-  display: inline-block;
-  padding: 5px 10px;
-  margin: 2px;
-  border-radius: 50px;
-  font-size: 12px;
-  color: var(--fourth-color);
-  background-color: var(--second-color);
 }
 
 /* ------------- FOOTER -------------- */
