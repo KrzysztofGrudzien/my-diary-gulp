@@ -8,11 +8,10 @@
     grid-area: sidebar;
     display: flex;
     flex-flow: column nowrap;
-    margin-top: 100px;
-
+    @include margin(100px, null, null, null);
 
     &__picture-box {
-        padding: 10px 20px;
+        @include padding(10px, 20px, 10px, 20px);
     }
 
     &__picture {
@@ -22,19 +21,19 @@
     }
 
     &__header {
-        margin-top: -45px;
-        padding-left: 20px;
+        @include margin(-45px, null, null, null);
+        @include padding(null, null, null, 20px);
         @include font(30px, 100, $third-color);
     }
 
     &__header-intro {
-        padding-left: 20px;
-        margin-bottom: 10px;
+        @include margin(null, null, 10px, null);
+        @include padding(null, null, null, 20px);
         @include font(30px, 100, null);
     }
 
     &__description {
-        padding-left: 20px;
+        @include padding(null, null, null, 20px);
         @include font(14px, 300, null);
     }
 }
