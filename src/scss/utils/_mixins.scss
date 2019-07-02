@@ -1,0 +1,8 @@
+/* ================================== */
+/*              DIMENTIONS            */
+/* ================================== */
+
+@mixin dimention($width, $height) {
+    width: $width;
+    height: $height;
+}
