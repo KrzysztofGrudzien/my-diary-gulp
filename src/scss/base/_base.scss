@@ -15,14 +15,14 @@ html {
 
 body {
 
-    color: var(--first-color);
+    color: $first-color;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
-    background-color: var(--fifth-color);
+    background-color: $fifth-color;
     background-image: linear-gradient(135deg,
-            var(--fifth-color),
-            var(--sixth-color),
-            var(--fifth-color),
-            var(--sixth-color));
+            $fifth-color,
+            $sixth-color,
+            $fifth-color,
+            $sixth-color);
 }
 
 ul {

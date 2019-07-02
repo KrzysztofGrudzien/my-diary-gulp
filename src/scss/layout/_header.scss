@@ -9,8 +9,8 @@
     padding: 20px;
     box-shadow: 0 2px 25px rgba(0, 0, 0, 0.3);
     font-weight: 600;
-    color: var(--fourth-color);
-    background-color: var(--second-color);
+    color: $fourth-color;
+    background-color: $second-color;
 }
 
 .header__logo {
