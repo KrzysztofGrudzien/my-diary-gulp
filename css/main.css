@@ -20,6 +20,18 @@
 .hidden {
   display: none; }
 
+/* ================================== */
+/*              DIMENTIONS            */
+/* ================================== */
+/* ================================== */
+/*               POSITION             */
+/* ================================== */
+/* ================================== */
+/*              TYPOGRAPHY            */
+/* ================================== */
+/* ================================== */
+/*               DISPLAY              */
+/* ================================== */
 /* -------------- BASE -------------- */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -390,7 +402,10 @@ ol li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
   -webkit-box-shadow: 0 2px 25px rgba(0, 0, 0, 0.3);
           box-shadow: 0 2px 25px rgba(0, 0, 0, 0.3);
   font-weight: 600;
@@ -416,7 +431,10 @@ ol li {
     font-weight: 400; }
   .header__item {
     height: 30px;
-    margin: 0 3px;
+    margin-top: 0;
+    margin-right: 3px;
+    margin-bottom: 0;
+    margin-left: 3px;
     border-radius: 50px;
     line-height: 30px;
     white-space: nowrap;
@@ -428,8 +446,8 @@ ol li {
     top: 10px;
     right: 20px;
     z-index: 100;
-    height: 60px;
     width: 60px;
+    height: 60px;
     color: #ffffff;
     background-color: #a90b56;
     cursor: pointer; }
@@ -447,33 +465,40 @@ ol li {
 /* ================================== */
 .nav {
   position: fixed;
-  min-height: 100vh;
-  width: 100%;
   z-index: 1;
+  width: 100%;
+  min-height: 100vh;
   background-color: rgba(169, 11, 85, 0.85); }
   .nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     width: 100%;
     min-height: 100vh; }
   .nav__item {
     display: block;
-    font-size: 60px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding: 16px;
-    text-align: center;
-    font-weight: 100; }
+    width: 50%;
+    padding-top: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    font-size: 60px;
+    font-weight: 100;
+    text-align: center; }
   .nav__link::before {
     content: "";
     position: absolute;
@@ -489,7 +514,7 @@ ol li {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 50%;
+    width: 100%;
     height: 1px;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
@@ -541,15 +566,20 @@ ol li {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   margin-top: 100px; }
   .author__picture-box {
-    padding: 10px 20px; }
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px; }
   .author__picture {
     width: 100%;
     height: auto;
-    border: solid 5px #8096b7;
+    border: solid 5px #232e40;
     -webkit-box-shadow: 0 2px 25px rgba(0, 0, 0, 0.3);
             box-shadow: 0 2px 25px rgba(0, 0, 0, 0.3); }
   .author__header {
@@ -559,8 +589,8 @@ ol li {
     font-weight: 100;
     color: #dbe7f8; }
   .author__header-intro {
-    padding-left: 20px;
     margin-bottom: 10px;
+    padding-left: 20px;
     font-size: 30px;
     font-weight: 100; }
   .author__description {
@@ -584,8 +614,8 @@ ol li {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: 20px;
   margin-top: 100px;
+  margin-right: 20px;
   -webkit-box-shadow: 0 2px 25px rgba(0, 0, 0, 0.3);
           box-shadow: 0 2px 25px rgba(0, 0, 0, 0.3);
   background-color: #232e40; }
@@ -606,7 +636,10 @@ ol li {
       flex-wrap: wrap;
   position: relative;
   width: 50%;
-  padding: 0 20px 20px 20px; }
+  padding-top: 0;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px; }
   .diary-tasks__more {
     width: 10%;
     cursor: pointer; }
@@ -623,9 +656,12 @@ ol li {
   .diary-tasks__footer {
     font-size: 12px; }
   .diary-tasks__picture-box {
-    height: 100px;
     width: 100%;
-    margin: 10px 0;
+    height: 100px;
+    margin-top: 10px;
+    margin-right: 0;
+    margin-bottom: 10px;
+    margin-left: 0;
     overflow: hidden;
     background-color: #ffffff; }
   .diary-tasks__picture-box--picture-one {
@@ -658,12 +694,18 @@ ol li {
     font-size: 14px; }
   .diary-tasks__hr {
     width: 100%;
-    height: 2px;
-    margin: 10px 0;
-    border-top: 1px solid #4f5e74; }
+    height: 1px;
+    margin-top: 10px;
+    margin-right: 0;
+    margin-bottom: 10px;
+    margin-left: 0;
+    border-bottom: solid 1px #4f5e74; }
   .diary-tasks__tags {
     width: 100%;
-    margin: 30px 0 0 0; }
+    margin-top: 30px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0; }
 
 /* ------------ COMPONENTS ----------- */
 /* ================================== */
@@ -674,8 +716,14 @@ ol li {
   float: right; }
   .tags__item {
     display: inline-block;
-    padding: 5px 10px;
-    margin: 2px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    margin-top: 2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
     border-radius: 50px;
     font-size: 12px;
     color: #ffffff;
@@ -685,6 +733,33 @@ ol li {
 /*                 RWD                */
 /* ================================== */
 /* ----------- DESKTOP LARGE---------- */
+@media screen and (min-width: 1281px) {
+  .main {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 15px;
+    -ms-grid-columns: 1fr 15px 1fr 15px 1fr 15px 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: [start 15px header] 15px 80px 15px [sidebar] 15px auto 15px [content] 15px auto 15px [footer] 15px 200px 15px [stop 15px end];
+    grid-template-rows: [start header] 80px [sidebar] auto [content] auto [footer] 200px [stop end];
+        grid-template-areas: "header header header header" "sidebar sidebar sidebar sidebar" "content content content content" "footer footer footer footer"; }
+  .header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 7; }
+  .footer {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 7; }
+  .author {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 7; }
+  .content {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 7; } }
+
 /* ------------- DESKTOP ------------- */
 @media screen and (max-width: 1280px) {
   .main {
