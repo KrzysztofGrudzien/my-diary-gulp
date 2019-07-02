@@ -7,6 +7,12 @@
     height: $height;
 }
 
+@mixin dimention-vh($width, $height) {
+    width: $width;
+    min-height: $height;
+}
+
+
 /* ================================== */
 /*               POSITION             */
 /* ================================== */

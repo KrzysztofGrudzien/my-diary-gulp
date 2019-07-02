@@ -59,7 +59,7 @@
     background-color: $fifth-color;
 
     &__header {
-        width: 100%;
+        @include dimention(100%, null);
         margin-top: -45px;
         font-size: 30px;
         color: $third-color;
@@ -71,11 +71,11 @@
     justify-content: space-between;
     flex-wrap: wrap;
     position: relative;
-    width: 50%;
+    @include dimention(50%, null);
     padding: 0 20px 20px 20px;
 
     &__more {
-        width: 10%;
+        @include dimention(10%, null);
         cursor: pointer;
     }
 
@@ -87,7 +87,7 @@
     }
 
     &__header {
-        width: 90%;
+        @include dimention(90%, null);
         font-size: 30px;
         font-weight: 100;
         margin: 0;
@@ -138,7 +138,7 @@
     }
 
     &__content {
-        min-height: 100px;
+        @include dimention-vh(null, 100px);
         line-height: 18px;
         font-size: 14px;
         font-weight: 300;
@@ -155,7 +155,7 @@
     }
 
     &__tags {
-        width: 100%;
+        @include dimention(100%, null);
         margin: 30px 0 0 0;
     }
 }
