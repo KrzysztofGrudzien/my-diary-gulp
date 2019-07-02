@@ -24,22 +24,18 @@
     &__header {
         margin-top: -45px;
         padding-left: 20px;
-        font-size: 30px;
-        font-weight: 100;
-        color: $third-color;
+        @include font(30px, 100, $third-color);
     }
 
     &__header-intro {
         padding-left: 20px;
         margin-bottom: 10px;
-        font-size: 30px;
-        font-weight: 100;
+        @include font(30px, 100, null);
     }
 
     &__description {
         padding-left: 20px;
-        font-size: 14px;
-        font-weight: 300;
+        @include font(14px, 300, null);
     }
 }
 
@@ -61,8 +57,7 @@
     &__header {
         @include dimention(100%, null);
         margin-top: -45px;
-        font-size: 30px;
-        color: $third-color;
+        @include font(30px, null, $third-color);
     }
 }
 
@@ -82,14 +77,12 @@
     &__more .material-icons {
         float: right;
         margin-right: -10px;
-        font-size: 30px;
-        color: $second-color;
+        @include font(30px, null, $second-color);
     }
 
     &__header {
         @include dimention(90%, null);
-        font-size: 30px;
-        font-weight: 100;
+        @include font(30px, 100, null);
         margin: 0;
     }
 
@@ -140,8 +133,7 @@
     &__content {
         @include dimention-vh(null, 100px);
         line-height: 18px;
-        font-size: 14px;
-        font-weight: 300;
+        @include font(14px, 300, null);
     }
 
     &__content .material-icons {
