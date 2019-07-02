@@ -4,21 +4,9 @@
 @import "base/normalize";
 @import "base/base";
 
-/* ================================== */
-/*             VARIABLES              */
-/* ================================== */
+/* -------------- UTILS ------------- */
 
-/* ------------- COLORS ------------- */
-
-:root {
-  --first-color: #8096b7;
-  --second-color: #a90b56;
-  --third-color: #dbe7f8;
-  --fourth-color: #ffffff;
-  --fifth-color: #232e40;
-  --sixth-color: #191f28;
-  --seventh-color: #4f5e74;
-}
+@import "utils/variables.scss";
 
 /* ================================== */
 /*       MATERIAL ICONS SETTINGS      */
