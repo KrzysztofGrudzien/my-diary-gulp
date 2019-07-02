@@ -3,6 +3,7 @@
 /* -------------- UTILS ------------- */
 @import "utils/variables.scss";
 @import "utils/helpers";
+@import "utils/mixins";
 
 /* -------------- BASE -------------- */
 @import "base/normalize";
@@ -27,7 +28,19 @@
 
 /* ----------- DESKTOP LARGE---------- */
 
-@media screen and (max-width: 1440px) {}
+@media screen and (min-width: 1281px) {
+  .main {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: [start header] 80px [sidebar] auto [content] auto [footer] 200px [stop end];
+    grid-template-areas:
+      "header header header header"
+      "sidebar sidebar sidebar sidebar"
+      "content content content content"
+      "footer footer footer footer";
+  }
+}
 
 /* ------------- DESKTOP ------------- */
 

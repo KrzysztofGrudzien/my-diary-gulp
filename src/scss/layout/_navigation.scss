@@ -3,47 +3,36 @@
 /* ================================== */
 
 .nav {
-    position: fixed;
-    min-height: 100vh;
-    width: 100%;
-    z-index: 1;
+    @include position(fixed, null, null, null, null, 1);
+    @include dimention-vh(100%, 100vh);
     background-color: rgba(169, 11, 85, 0.85);
 
     &__list {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-content: center;
-        width: 100%;
-        min-height: 100vh;
+        @include flex(flex, center, center, column, nowrap);
+        @include dimention-vh(100%, 100vh);
     }
 
     &__item {
         display: block;
-        font-size: 60px;
         box-sizing: border-box;
-        padding: 16px;
+        @include dimention(50%, null);
+        @include padding(16px, 16px, 16px, 16px);
+        @include font(60px, 100, null);
         text-align: center;
-        font-weight: 100;
     }
 
     &__link::before {
         content: "";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 0;
+        @include position(absolute, 50%, null, null, 50%, null);
+        @include dimention(0, null);
         transform: translate(-50%, -50%);
         background-color: $fourth-color;
     }
 
     &__link:hover::before {
         content: "";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 50%;
-        height: 1px;
+        @include position(absolute, 50%, null, null, 50%, null);
+        @include dimention(100%, 1px);
         transform: translate(-50%, -50%);
         transition: width .3s ease-in-out;
         background-color: $fourth-color;
@@ -52,8 +41,7 @@
     &__link {
         position: relative;
         display: inline-block;
-        width: 100%;
-        height: 100%;
+        @include dimention(100%, 100%);
         color: $fourth-color;
         text-decoration: none;
     }

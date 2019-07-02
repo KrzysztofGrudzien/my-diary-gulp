@@ -1,0 +1,66 @@
+/* ================================== */
+/*              DIMENTIONS            */
+/* ================================== */
+
+@mixin dimention($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin dimention-vh($width, $height) {
+    width: $width;
+    min-height: $height;
+}
+
+@mixin padding($top, $right, $bottom, $left) {
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+}
+
+@mixin margin($top, $right, $bottom, $left) {
+    margin-top: $top;
+    margin-right: $right;
+    margin-bottom: $bottom;
+    margin-left: $left;
+}
+
+@mixin border($type, $thickness, $color) {
+    border: $type $thickness $color;
+}
+
+/* ================================== */
+/*               POSITION             */
+/* ================================== */
+
+@mixin position($position, $top, $right, $bottom, $left, $index) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+    z-index: $index;
+}
+
+/* ================================== */
+/*              TYPOGRAPHY            */
+/* ================================== */
+
+@mixin font($size, $weight, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+/* ================================== */
+/*               DISPLAY              */
+/* ================================== */
+
+@mixin flex($display, $justify-content, $align-items, $direction, $wrap) {
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
