@@ -6,3 +6,16 @@
     width: $width;
     height: $height;
 }
+
+/* ================================== */
+/*               POSITION             */
+/* ================================== */
+
+@mixin position($position, $top, $right, $bottom, $left, $index) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+    z-index: $index;
+}

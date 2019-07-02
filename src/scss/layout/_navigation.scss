@@ -4,9 +4,9 @@
 
 .nav {
     position: fixed;
+    z-index: 1;
     min-height: 100vh;
     width: 100%;
-    z-index: 1;
     background-color: rgba(169, 11, 85, 0.85);
 
     &__list {
@@ -29,9 +29,7 @@
 
     &__link::before {
         content: "";
-        position: absolute;
-        top: 50%;
-        left: 50%;
+        @include position(absolute, 50%, null, null, 50%, null);
         width: 0;
         transform: translate(-50%, -50%);
         background-color: $fourth-color;
@@ -39,9 +37,7 @@
 
     &__link:hover::before {
         content: "";
-        position: absolute;
-        top: 50%;
-        left: 50%;
+        @include position(absolute, 50%, null, null, 50%, null);
         @include dimention(50%, 1px);
         transform: translate(-50%, -50%);
         transition: width .3s ease-in-out;

@@ -44,10 +44,7 @@
     }
 
     &__nav-open-icon {
-        position: fixed;
-        top: 10px;
-        right: 20px;
-        z-index: 100;
+        @include position(fixed, 10px, 20px, null, null, 100);
         @include dimention(60px, 60px);
         color: $fourth-color;
         background-color: $second-color;
@@ -55,9 +52,7 @@
     }
 
     &__nav-open-icon .material-icons--big {
-        position: absolute;
-        top: 50%;
-        left: 50%;
+        @include position(absolute, 50%, null, null, 50%, null);
         transform: translate(-50%, -50%);
         font-size: 40px;
     }
