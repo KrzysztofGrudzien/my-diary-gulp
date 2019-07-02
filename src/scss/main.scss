@@ -9,6 +9,7 @@
 @import "base/base";
 
 /* ------------- LAYOUT ------------- */
+@import "layout/grid";
 @import "layout/header";
 @import "layout/navigation";
 @import "layout/footer";
@@ -19,21 +20,6 @@
 /* ------------ COMPONENTS ----------- */
 @import "components/buttons";
 
-
-/* ================================== */
-/*         MAIN GRID SETTINGS         */
-/* ================================== */
-
-.main {
-  display: grid;
-  grid-gap: 25px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: [start header] 80px [sidebar] auto [content] auto [footer] 200px [stop end];
-  grid-template-areas:
-    "header  header  header header"
-    "sidebar content content content"
-    "footer  footer  footer footer";
-}
 
 /* ================================== */
 /*                 RWD                */
@@ -52,10 +38,10 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: [start header] 80px [sidebar] auto [content] auto [footer] 200px [stop end];
     grid-template-areas:
-      "header  header  header header"
+      "header header header header"
       "sidebar sidebar sidebar sidebar"
       "content content content content"
-      "footer  footer  footer footer";
+      "footer footer footer footer";
   }
 
   .diary-tasks__header {
@@ -100,10 +86,10 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: [start header] 80px [sidebar] auto [content] auto [footer] 200px [stop end];
     grid-template-areas:
-      "header  header  header header"
+      "header header header header"
       "sidebar sidebar sidebar sidebar"
       "content content content content"
-      "footer  footer  footer footer";
+      "footer footer footer footer";
   }
 
   .author {
@@ -156,10 +142,10 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: [start header] 80px [sidebar] auto [content] auto [footer] 200px [stop end];
     grid-template-areas:
-      "header  header  header header"
+      "header header header header"
       "sidebar sidebar sidebar sidebar"
       "content content content content"
-      "footer  footer  footer footer";
+      "footer footer footer footer";
   }
 
   .author {
