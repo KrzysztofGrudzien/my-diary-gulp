@@ -26,6 +26,10 @@
     margin-left: $left;
 }
 
+@mixin border($type, $thickness, $color) {
+    border: $type $thickness $color;
+}
+
 /* ================================== */
 /*               POSITION             */
 /* ================================== */
