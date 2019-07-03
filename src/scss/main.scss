@@ -36,8 +36,7 @@
     grid-template-rows: [start header] 80px [sidebar] auto [content] auto [footer] 200px [stop end];
     grid-template-areas:
       "header header header header"
-      "sidebar sidebar sidebar sidebar"
-      "content content content content"
+      "sidebar content content content"
       "footer footer footer footer";
   }
 }
