@@ -32,6 +32,9 @@
 /* ================================== */
 /*               DISPLAY              */
 /* ================================== */
+/* ================================== */
+/*              ANIMATION             */
+/* ================================== */
 /* -------------- BASE -------------- */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -519,9 +522,15 @@ ol li {
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    -webkit-transition: width .3s ease-in-out;
-    -o-transition: width .3s ease-in-out;
-    transition: width .3s ease-in-out;
+    -webkit-transition-property: width;
+    -o-transition-property: width;
+    transition-property: width;
+    -webkit-transition-duration: 0.3s;
+         -o-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+    -webkit-transition-delay: ease-in-out;
+         -o-transition-delay: ease-in-out;
+            transition-delay: ease-in-out;
     background-color: #ffffff; }
   .nav__link {
     position: relative;
@@ -580,6 +589,7 @@ ol li {
     width: 100%;
     height: auto;
     border: solid 5px #232e40;
+    margin-top: -25px;
     -webkit-box-shadow: 0 2px 25px rgba(0, 0, 0, 0.3);
             box-shadow: 0 2px 25px rgba(0, 0, 0, 0.3); }
   .author__header {
@@ -742,23 +752,22 @@ ol li {
     grid-template-columns: repeat(4, 1fr);
     -ms-grid-rows: [start 15px header] 15px 80px 15px [sidebar] 15px auto 15px [content] 15px auto 15px [footer] 15px 200px 15px [stop 15px end];
     grid-template-rows: [start header] 80px [sidebar] auto [content] auto [footer] 200px [stop end];
-        grid-template-areas: "header header header header" "sidebar sidebar sidebar sidebar" "content content content content" "footer footer footer footer"; }
+        grid-template-areas: "header header header header" "sidebar content content content" "footer footer footer footer"; }
   .header {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 7; }
   .footer {
-    -ms-grid-row: 7;
+    -ms-grid-row: 5;
     -ms-grid-column: 1;
     -ms-grid-column-span: 7; }
   .author {
     -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 7; }
+    -ms-grid-column: 1; }
   .content {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 7; } }
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 5; } }
 
 /* ------------- DESKTOP ------------- */
 @media screen and (max-width: 1280px) {
@@ -778,6 +787,8 @@ ol li {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap; }
+  .author__header-intro {
+    margin-top: 0; }
   .author__profile {
     width: 50%; }
   .author__box-description {
