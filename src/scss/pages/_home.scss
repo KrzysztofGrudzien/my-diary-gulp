@@ -16,6 +16,7 @@
     &__picture {
         @include dimention(100%, auto);
         @include border(solid, 5px, $fifth-color);
+        margin-top: -25px;
         box-shadow: 0 2px 25px rgba(0, 0, 0, 0.3);
     }
 
