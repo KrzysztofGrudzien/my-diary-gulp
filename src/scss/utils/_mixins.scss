@@ -64,3 +64,13 @@
     flex-direction: $direction;
     flex-wrap: $wrap;
 }
+
+/* ================================== */
+/*              ANIMATION             */
+/* ================================== */
+
+@mixin transition($property, $time, $delay) {
+    transition-property: $property;
+    transition-duration: $time;
+    transition-delay: $delay;
+}
