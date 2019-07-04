@@ -1,15 +1,5 @@
 'use strict';
 
-// Replacement script - start
-const btn = document.querySelectorAll('.diary-tasks__more');
-
-for (let i = 0; i < btn.length; i++) {
-  btn[i].addEventListener('click', () => {
-    alert("tutaj będzie JS");
-  });
-}
-// Replacement script - end
-
 //=================================//
 /* Fill up a content of the footer */
 //=================================//
