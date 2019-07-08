@@ -74,3 +74,48 @@
     transition-duration: $time;
     transition-delay: $delay;
 }
+
+/* ================================== */
+/*                 RWD                */
+/* ================================== */
+
+/* 
+0 - 640px: Phone
+640px - 1024px: Tablet
+1024px - 1280px: Desktop
+1281px + - Large Screen 
+*/
+
+@mixin device($breakpoint) {
+    @if $breakpoint==phone {
+        @media (max-width: 640px) {
+            @content
+        }
+    }
+
+    ;
+
+    @if $breakpoint==tablet {
+        @media (max-width: 1024px) {
+            @content
+        }
+    }
+
+    ;
+
+    @if $breakpoint==desktop {
+        @media (max-width: 1280px) {
+            @content
+        }
+    }
+
+    ;
+
+    @if $breakpoint==big-desktop {
+        @media (min-width: 1281px) {
+            @content
+        }
+    }
+
+    ;
+}
