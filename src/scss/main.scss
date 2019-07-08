@@ -18,6 +18,7 @@
 @import "layout/grid";
 @import "layout/header";
 @import "layout/navigation";
+@import "layout/content";
 @import "layout/footer";
 
 /* ------------- PAGES -------------- */
@@ -34,7 +35,7 @@
 /* ----------- DESKTOP LARGE---------- */
 
 @media screen and (min-width: 1281px) {
-  .main {
+  .wrapper {
     display: grid;
     grid-gap: 15px;
     grid-template-columns: repeat(4, 1fr);
