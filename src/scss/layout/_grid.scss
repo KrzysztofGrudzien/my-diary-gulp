@@ -32,28 +32,30 @@
             "footer footer footer footer";
     }
 
-    .diary-tasks__header {
-        font-size: 24px;
-    }
-
     .author {
         flex-flow: row nowrap;
-    }
 
-    .author__header-intro {
-        margin-top: 0;
-    }
+        &__header-intro {
+            margin-top: 0;
+        }
 
-    .author__profile {
-        width: 50%;
-    }
+        &__profile {
+            width: 50%;
+        }
 
-    .author__box-description {
-        width: 50%;
+        &__box-description {
+            width: 50%;
+        }
     }
 
     .diary-day {
         margin-left: 20px;
+    }
+
+    .diary-tasks {
+        &__header {
+            font-size: 24px;
+        }
     }
 }
 
