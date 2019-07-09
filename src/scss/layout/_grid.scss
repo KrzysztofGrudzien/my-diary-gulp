@@ -2,13 +2,9 @@
 /*         MAIN GRID SETTINGS         */
 /* ================================== */
 
-/* ================================== */
-/*                 RWD                */
-/* ================================== */
-
 /* ----------- DESKTOP LARGE---------- */
 
-@media screen and (min-width: 1281px) {
+@include device(big-desktop) {
     .wrapper {
         display: grid;
         grid-gap: 15px;
@@ -23,7 +19,7 @@
 
 /* ------------- DESKTOP ------------- */
 
-@media screen and (max-width: 1280px) {
+@include device(desktop) {
     .wrapper {
         display: grid;
         grid-gap: 15px;
@@ -41,7 +37,7 @@
     }
 
     .author {
-        flex-flow: row wrap;
+        flex-flow: row nowrap;
     }
 
     .author__header-intro {
@@ -63,19 +59,7 @@
 
 /* ------------- TABLET ------------- */
 
-@media screen and (max-width: 1024px) {
-    .nav__item {
-        font-size: 55px;
-    }
-
-    .header__logo {
-        font-size: 28px;
-    }
-
-    .header__heading {
-        font-size: 28px;
-    }
-
+@include device(tablet) {
     .wrapper {
         display: grid;
         grid-gap: 15px;
@@ -86,6 +70,18 @@
             "sidebar sidebar sidebar sidebar"
             "content content content content"
             "footer footer footer footer";
+    }
+
+    .nav__item {
+        font-size: 55px;
+    }
+
+    .header__logo {
+        font-size: 28px;
+    }
+
+    .header__heading {
+        font-size: 28px;
     }
 
     .author {
@@ -119,19 +115,7 @@
 
 /* ------------- PHONE -------------- */
 
-@media screen and (max-width: 640px) {
-    .nav__item {
-        font-size: 45px;
-    }
-
-    .header__logo {
-        font-size: 24px;
-    }
-
-    .header__heading {
-        display: none;
-    }
-
+@include device(phone) {
     .wrapper {
         display: grid;
         grid-gap: 15px;
@@ -142,6 +126,18 @@
             "sidebar sidebar sidebar sidebar"
             "content content content content"
             "footer footer footer footer";
+    }
+
+    .nav__item {
+        font-size: 45px;
+    }
+
+    .header__logo {
+        font-size: 24px;
+    }
+
+    .header__heading {
+        display: none;
     }
 
     .author {

@@ -85,37 +85,59 @@
 1024px - 1280px: Desktop
 1281px + - Large Screen 
 */
+$phone: 'screen and (max-width: 640px)';
+$tablet: 'screen and (max-width: 1024px)';
+$desktop: 'screen and (max-width: 1280px)';
+$big-desktop: 'screen and (min-width: 1281px)';
+
+// @mixin device($breakpoint) {
+//     @if $breakpoint==phone {
+//         @media #{$phone} {
+//             @content;
+//         }
+//     }
+
+//     @else if $breakpoint==tablet {
+//         @media #{$tablet} {
+//             @content;
+//         }
+//     }
+
+//     @else if $breakpoint==desktop {
+//         @media #{$desktop} {
+//             @content;
+//         }
+//     }
+
+//     @else {
+//         @media #{$big-desktop} {
+//             @content;
+//         }
+//     }
+// }
 
 @mixin device($breakpoint) {
-    @if $breakpoint==phone {
-        @media (max-width: 640px) {
-            @content
-        }
-    }
-
-    ;
-
-    @if $breakpoint==tablet {
-        @media (max-width: 1024px) {
-            @content
-        }
-    }
-
-    ;
-
-    @if $breakpoint==desktop {
-        @media (max-width: 1280px) {
-            @content
-        }
-    }
-
-    ;
-
     @if $breakpoint==big-desktop {
-        @media (min-width: 1281px) {
-            @content
+        @media #{$big-desktop} {
+            @content;
         }
     }
 
-    ;
+    @else if $breakpoint==desktop {
+        @media #{$desktop} {
+            @content;
+        }
+    }
+
+    @else if $breakpoint==tablet {
+        @media #{$tablet} {
+            @content;
+        }
+    }
+
+    @else {
+        @media #{$phone} {
+            @content;
+        }
+    }
 }

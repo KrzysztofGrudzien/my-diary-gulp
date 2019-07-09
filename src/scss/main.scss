@@ -15,7 +15,6 @@
 @import "base/base";
 
 /* ------------- LAYOUT ------------- */
-@import "layout/grid";
 @import "layout/header";
 @import "layout/navigation";
 @import "layout/content";
@@ -23,6 +22,7 @@
 
 /* ------------- PAGES -------------- */
 @import "pages/home";
+@import "layout/grid";
 
 /* ------------ COMPONENTS ----------- */
 @import "components/buttons";
