@@ -40,10 +40,6 @@
 
 /* ------------- CONTENT ------------- */
 
-.content {
-    grid-area: content;
-}
-
 .diary-day {
     @include flex(flex, space-between, null, null, wrap);
     @include margin(100px, 20px, null, null);

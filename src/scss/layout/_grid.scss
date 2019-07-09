@@ -2,13 +2,167 @@
 /*         MAIN GRID SETTINGS         */
 /* ================================== */
 
-.main {
-    display: grid;
-    grid-gap: 25px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: [start header] 80px [sidebar] auto [content] auto [footer] 200px [stop end];
-    grid-template-areas:
-        "header  header  header header"
-        "sidebar content content content"
-        "footer  footer  footer footer";
+/* ----------- DESKTOP LARGE---------- */
+
+@include device(big-desktop) {
+    .wrapper {
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: [start header] 80px [sidebar] auto [content] auto [footer end];
+        grid-template-areas:
+            "header header header header"
+            "sidebar content content content"
+            "footer footer footer footer";
+    }
+}
+
+/* ------------- DESKTOP ------------- */
+
+@include device(desktop) {
+    .wrapper {
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: [start header] 80px [sidebar] auto [content] auto [footer end];
+        grid-template-areas:
+            "header header header header"
+            "sidebar sidebar sidebar sidebar"
+            "content content content content"
+            "footer footer footer footer";
+    }
+
+    .author {
+        flex-flow: row nowrap;
+
+        &__header-intro {
+            margin-top: 0;
+        }
+
+        &__profile {
+            width: 50%;
+        }
+
+        &__box-description {
+            width: 50%;
+        }
+    }
+
+    .diary-day {
+        margin-left: 20px;
+    }
+
+    .diary-tasks {
+        &__header {
+            font-size: 24px;
+        }
+    }
+}
+
+/* ------------- TABLET ------------- */
+
+@include device(tablet) {
+    .wrapper {
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: [start header] 80px [sidebar] auto [content] auto [footer end];
+        grid-template-areas:
+            "header header header header"
+            "sidebar sidebar sidebar sidebar"
+            "content content content content"
+            "footer footer footer footer";
+    }
+
+    .nav__item {
+        font-size: 55px;
+    }
+
+    .header__logo {
+        font-size: 28px;
+    }
+
+    .header__heading {
+        font-size: 28px;
+    }
+
+    .author {
+        flex-flow: row wrap;
+    }
+
+    .author__profile {
+        width: 50%;
+    }
+
+    .author__box-description {
+        width: 50%;
+    }
+
+    .diary-tasks {
+        width: 100%;
+    }
+
+    .diary-day {
+        margin-left: 20px;
+    }
+
+    .diary-tasks__header {
+        font-size: 36px;
+    }
+
+    .diary-tasks__picture-box {
+        height: 200px;
+    }
+}
+
+/* ------------- PHONE -------------- */
+
+@include device(phone) {
+    .wrapper {
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: [start header] 80px [sidebar] auto [content] auto [footer end];
+        grid-template-areas:
+            "header header header header"
+            "sidebar sidebar sidebar sidebar"
+            "content content content content"
+            "footer footer footer footer";
+    }
+
+    .nav__item {
+        font-size: 45px;
+    }
+
+    .header__logo {
+        font-size: 24px;
+    }
+
+    .header__heading {
+        display: none;
+    }
+
+    .author {
+        flex-flow: row wrap;
+    }
+
+    .author__profile {
+        width: 100%;
+    }
+
+    .author__box-description {
+        width: 100%;
+    }
+
+    .diary-tasks {
+        width: 100%;
+    }
+
+    .diary-tasks__header {
+        font-size: 28px;
+    }
+
+    .diary-day {
+        margin-left: 20px;
+    }
 }

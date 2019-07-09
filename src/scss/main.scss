@@ -1,4 +1,9 @@
 /* Author: Krzysztof Grudzień */
+/* -------------- FONTS ------------- */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=latin-ext');
+
+/* -------------- ICONS ------------- */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 /* -------------- UTILS ------------- */
 @import "utils/variables.scss";
@@ -10,181 +15,14 @@
 @import "base/base";
 
 /* ------------- LAYOUT ------------- */
-@import "layout/grid";
 @import "layout/header";
 @import "layout/navigation";
+@import "layout/content";
 @import "layout/footer";
 
 /* ------------- PAGES -------------- */
 @import "pages/home";
+@import "layout/grid";
 
 /* ------------ COMPONENTS ----------- */
 @import "components/buttons";
-
-
-/* ================================== */
-/*                 RWD                */
-/* ================================== */
-
-/* ----------- DESKTOP LARGE---------- */
-
-@media screen and (min-width: 1281px) {
-  .main {
-    display: grid;
-    grid-gap: 15px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: [start header] 80px [sidebar] auto [content] auto [footer] 200px [stop end];
-    grid-template-areas:
-      "header header header header"
-      "sidebar content content content"
-      "footer footer footer footer";
-  }
-}
-
-/* ------------- DESKTOP ------------- */
-
-@media screen and (max-width: 1280px) {
-  .main {
-    display: grid;
-    grid-gap: 15px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: [start header] 80px [sidebar] auto [content] auto [footer] 200px [stop end];
-    grid-template-areas:
-      "header header header header"
-      "sidebar sidebar sidebar sidebar"
-      "content content content content"
-      "footer footer footer footer";
-  }
-
-  .diary-tasks__header {
-    font-size: 24px;
-  }
-
-  .author {
-    flex-flow: row wrap;
-  }
-
-  .author__header-intro {
-    margin-top: 0;
-  }
-
-  .author__profile {
-    width: 50%;
-  }
-
-  .author__box-description {
-    width: 50%;
-  }
-
-  .diary-day {
-    margin-left: 20px;
-  }
-}
-
-/* ------------- TABLET ------------- */
-
-@media screen and (max-width: 1024px) {
-  .nav__item {
-    font-size: 55px;
-  }
-
-  .header__logo {
-    font-size: 28px;
-  }
-
-  .header__heading {
-    font-size: 28px;
-  }
-
-  .main {
-    display: grid;
-    grid-gap: 15px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: [start header] 80px [sidebar] auto [content] auto [footer] 200px [stop end];
-    grid-template-areas:
-      "header header header header"
-      "sidebar sidebar sidebar sidebar"
-      "content content content content"
-      "footer footer footer footer";
-  }
-
-  .author {
-    flex-flow: row wrap;
-  }
-
-  .author__profile {
-    width: 50%;
-  }
-
-  .author__box-description {
-    width: 50%;
-  }
-
-  .diary-tasks {
-    width: 100%;
-  }
-
-  .diary-day {
-    margin-left: 20px;
-  }
-
-  .diary-tasks__header {
-    font-size: 36px;
-  }
-
-  .diary-tasks__picture-box {
-    height: 200px;
-  }
-}
-
-/* ------------- PHONE -------------- */
-
-@media screen and (max-width: 640px) {
-  .nav__item {
-    font-size: 45px;
-  }
-
-  .header__logo {
-    font-size: 24px;
-  }
-
-  .header__heading {
-    display: none;
-  }
-
-  .main {
-    display: grid;
-    grid-gap: 15px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: [start header] 80px [sidebar] auto [content] auto [footer] 200px [stop end];
-    grid-template-areas:
-      "header header header header"
-      "sidebar sidebar sidebar sidebar"
-      "content content content content"
-      "footer footer footer footer";
-  }
-
-  .author {
-    flex-flow: row wrap;
-  }
-
-  .author__profile {
-    width: 100%;
-  }
-
-  .author__box-description {
-    width: 100%;
-  }
-
-  .diary-tasks {
-    width: 100%;
-  }
-
-  .diary-tasks__header {
-    font-size: 28px;
-  }
-
-  .diary-day {
-    margin-left: 20px;
-  }
-}
