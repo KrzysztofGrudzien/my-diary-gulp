@@ -90,32 +90,6 @@ $tablet: 'screen and (max-width: 1024px)';
 $desktop: 'screen and (max-width: 1280px)';
 $big-desktop: 'screen and (min-width: 1281px)';
 
-// @mixin device($breakpoint) {
-//     @if $breakpoint==phone {
-//         @media #{$phone} {
-//             @content;
-//         }
-//     }
-
-//     @else if $breakpoint==tablet {
-//         @media #{$tablet} {
-//             @content;
-//         }
-//     }
-
-//     @else if $breakpoint==desktop {
-//         @media #{$desktop} {
-//             @content;
-//         }
-//     }
-
-//     @else {
-//         @media #{$big-desktop} {
-//             @content;
-//         }
-//     }
-// }
-
 @mixin device($breakpoint) {
     @if $breakpoint==big-desktop {
         @media #{$big-desktop} {
