@@ -142,3 +142,19 @@
         @include margin(30px, 0, 0, 0);
     }
 }
+
+.tasks {
+    @include flex(flex, space-between, null , column, wrap);
+
+    &__item {
+        display: flex;
+        padding-top: 3px;
+        @include font(0.875rem, 300, null);
+
+        & > .material-icons {
+            font-size: 0.875rem;
+        }
+    }
+
+
+}
