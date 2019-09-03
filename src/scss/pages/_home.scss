@@ -35,6 +35,7 @@
     &__description {
         @include padding(null, null, null, 20px);
         @include font(14px, 300, null);
+        line-height: 1.25rem;
     }
 }
 
