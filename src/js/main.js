@@ -3,7 +3,7 @@
 //=================================//
 /* Fill up a content of the footer */
 //=================================//
-const footer = document.querySelector('.footer');
+const footer = document.querySelector('.footer--js');
 
 const addFooter = function (name) {
   //create footer
@@ -16,7 +16,7 @@ addFooter('Krzysztof Grudzień');
 /* Open and close navigation       */
 //=================================//
 const toogleIcon = document.querySelector('.header__nav-open-icon--js');
-const navContainer = document.querySelector('.nav');
+const navContainer = document.querySelector('.nav--js');
 
 const displayMenu = () => {
   navContainer.classList.toggle('hidden');
