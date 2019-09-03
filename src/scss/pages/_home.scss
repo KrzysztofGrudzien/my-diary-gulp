@@ -41,7 +41,7 @@
 
 /* ------------- CONTENT ------------- */
 
-.diary-day {
+.diary-week {
     @include flex(flex, space-between, null, null, wrap);
     @include margin(100px, 20px, null, null);
     box-shadow: 0 2px 25px rgba(0, 0, 0, 0.3);
