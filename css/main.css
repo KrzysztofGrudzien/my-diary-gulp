@@ -602,10 +602,11 @@ ol li {
   .author__description {
     padding-left: 20px;
     font-size: 14px;
-    font-weight: 300; }
+    font-weight: 300;
+    line-height: 1.25rem; }
 
 /* ------------- CONTENT ------------- */
-.diary-day {
+.diary-week {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -619,7 +620,7 @@ ol li {
   -webkit-box-shadow: 0 2px 25px rgba(0, 0, 0, 0.3);
           box-shadow: 0 2px 25px rgba(0, 0, 0, 0.3);
   background-color: #232e40; }
-  .diary-day__header {
+  .diary-week__header {
     width: 100%;
     margin-top: -45px;
     font-size: 30px;
@@ -706,6 +707,29 @@ ol li {
     margin-right: 0;
     margin-bottom: 0;
     margin-left: 0; }
+
+.tasks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .tasks__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 3px;
+    font-size: 0.875rem;
+    font-weight: 300; }
+    .tasks__item > .material-icons {
+      font-size: 0.875rem; }
 
 /* ================================== */
 /*         MAIN GRID SETTINGS         */
