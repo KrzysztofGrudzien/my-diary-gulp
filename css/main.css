@@ -483,10 +483,9 @@ ol li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
     width: 100%;
-    min-height: 100vh; }
+    min-height: 100vh;
+    padding: 0; }
   .nav__item {
     display: block;
     -webkit-box-sizing: border-box;
@@ -885,8 +884,12 @@ ol li {
     width: 100%; }
   .diary-tasks__header {
     font-size: 28px; }
-  .diary-day {
+  .diary-week {
     margin-left: 20px; }
+    .diary-week__header {
+      margin-top: -65px;
+      font-size: 1.70rem;
+      text-align: center; }
   .header {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
