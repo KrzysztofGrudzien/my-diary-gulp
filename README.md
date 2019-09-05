@@ -1,4 +1,4 @@
-![Homepage screenshot](github/screenshot.jpg)
+![Homepage screenshot](github/screenshot.png)
 
 # WTF - The diary of frontend developer
 
