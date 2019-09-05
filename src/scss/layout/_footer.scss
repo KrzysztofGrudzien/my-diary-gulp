@@ -6,7 +6,7 @@
     grid-area: footer;
     @include padding(190px, null, 5px, null);
     text-align: center;
-    @include font(12px, null, $third-color);
+    @include font(0.75rem, null, $third-color);
     background-image: url("../assets/img/footer.svg");
     background-size: cover;
     background-position: center center;

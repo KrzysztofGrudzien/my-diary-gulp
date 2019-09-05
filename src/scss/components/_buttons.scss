@@ -12,7 +12,7 @@
         @include padding(5px, 10px, 5px, 10px);
         @include margin(2px, 2px, 2px, 2px);
         border-radius: 50px;
-        @include font(12px, null, $fourth-color);
+        @include font(0.75rem, null, $fourth-color);
         background-color: $second-color;
     }
 }

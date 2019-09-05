@@ -23,18 +23,18 @@
     &__header {
         @include margin(-45px, null, null, null);
         @include padding(null, null, null, 20px);
-        @include font(30px, 100, $third-color);
+        @include font(1.875rem, 100, $third-color);
     }
 
     &__header-intro {
         @include margin(null, null, 10px, null);
         @include padding(null, null, null, 20px);
-        @include font(30px, 100, null);
+        @include font(1.875rem, 100, null);
     }
 
     &__description {
         @include padding(null, null, null, 20px);
-        @include font(14px, 300, null);
+        @include font(0.875rem, 300, null);
         line-height: 1.25rem;
     }
 }
@@ -50,7 +50,7 @@
     &__header {
         @include dimention(100%, null);
         @include margin(-45px, null, null, null);
-        @include font(30px, null, $third-color);
+        @include font(1.875rem, null, $third-color);
     }
 }
 
@@ -73,12 +73,12 @@
 
     &__header {
         @include dimention(90%, null);
-        @include font(30px, 100, null);
+        @include font(1.875rem, 100, null);
         margin: 0;
     }
 
     &__footer {
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 
     &__picture-box {
@@ -123,12 +123,12 @@
 
     &__content {
         @include dimention-vh(null, 100px);
-        line-height: 18px;
-        @include font(14px, 300, null);
+        line-height: 1.125rem;
+        @include font(0.875rem, 300, null);
     }
 
     &__content .material-icons {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     &__hr {
