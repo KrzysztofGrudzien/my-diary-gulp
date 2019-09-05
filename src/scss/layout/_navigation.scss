@@ -8,8 +8,9 @@
     background-color: rgba(169, 11, 85, 0.85);
 
     &__list {
-        @include flex(flex, center, center, column, nowrap);
+        @include flex(flex, center, center, column, null);
         @include dimention-vh(100%, 100vh);
+        padding: 0;
     }
 
     &__item {
