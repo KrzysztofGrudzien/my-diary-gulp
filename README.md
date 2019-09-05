@@ -2,7 +2,7 @@
 
 # WTF - The diary of frontend developer
 
-If you want to know how my website looks like click here -> [Pamiętnik frontenddevelopera](https://github.com/KrzysztofGrudzien/my-diary-gulp)
+If you want to know how my website looks like click here -> [WTF - FrontEnd Developer Diary](https://github.com/KrzysztofGrudzien/my-diary-gulp)
 
 ## The aim of this project 🚀
 The main aim of this course is learning knowledge about fundamental skills for junior frontend developer as a person who applies for a job. Thanks to that many people will have solid skills before to go to the huge frontend world where every day many programmers create something new for any.
