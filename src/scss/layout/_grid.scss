@@ -162,7 +162,13 @@
         font-size: 28px;
     }
 
-    .diary-day {
+    .diary-week {
         margin-left: 20px;
+
+        &__header {
+            margin-top: -65px;
+            font-size: 1.70rem;
+            text-align: center;
+        }
     }
 }
